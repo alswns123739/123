@@ -23,10 +23,11 @@ while i < 10:
 #while문을 활용하여 팩토리얼을 구하는 코드입니다. 가에 알맞은 코드를 선택하세요.
 n = int(input())
 res = 1   
+가 = 0
 
 while n>0:
     res*=n
-    가 
+    가
 
 print(res)
 
@@ -43,3 +44,41 @@ print(res)
 
 # 4번: 1번
 # n이 1씩 줄이며, res *= n을 반복해야하기 때문
+
+
+
+
+
+# while문 퀴즈
+# 1. 코드를 실행시킨 결과로 알맞은 코드를 작성하시오
+i = 0 
+while i<10:
+    print("Hello, world!")
+    i+=1
+
+# 문제2
+n = int(input("몇 단을 출력해볼까요?"))
+for i in range(1,10):
+    print(n,"*",i,"=",n*i) 
+
+
+n = int(input("몇 단을 출력해볼까요?"))
+i= 1
+가
+    print(n,"*",i,"=",n*i)
+    i +=1  # i를 1~9까지 점점 커지도록 해줍니다.  
+
+# 1번 답: 1
+# Hello, world!
+# Hello, world!
+# Hello, world!
+# Hello, world!
+# Hello, world!
+# Hello, world!
+# Hello, world!
+# Hello, world!
+# Hello, world!
+# Hello, world!
+# i가 10미만일땐 입력수에 +1을 출력
+
+# 답: while i> 10:
