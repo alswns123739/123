@@ -67,3 +67,84 @@ while sum < n: #n이 sum보다 크다
     sum += a
 
 print(a)
+
+
+
+# while문과 for문 비교
+# for문과 while문은 비슷한 반복문 구현 가능
+# for문은 횟수가 중요할때, while문은 특정조건이 중요할때
+
+for i in range(1, 6, 1):
+    print(i)
+
+i = 1
+while i < 6:
+    print(i)
+    i =+ 1
+
+#예제1_구구단을_for문으로_작성해봅시다.
+
+n = int(input("몇 단을 출력해볼까요?"))
+for i in range(1,10):
+    print(n,"*",i,"=",n*i)  # n은 고정되고, i만 1~9까지 반복하면 됩니다.
+
+#예제2_구구단을_while문으로_작성해봅시다.
+
+n = int(input("몇 단을 출력해볼까요?"))
+i= 1
+while i<10:
+    print(n,"*",i,"=",n*i)
+    i +=1  # i를 1~9까지 점점 커지도록 해줍니다.  
+
+
+
+# Break문
+# 코드 실행중 특정구간에서 정리를 하고 싶을 때 사용
+# 반복운에서는 반복문은 중단
+# 반복문을 강제로 중단시키는 역할
+
+while True:  # 무한 루프 시작
+    # 사용자로부터 정수 입력 받기
+    num = int(input("정수를 입력하세요: "))
+
+    # 입력한 수가 3의 배수인지 확인하기
+    if num % 3 == 0:
+        print(num, "은(는) 3의 배수입니다.")
+        break  # 루프 종료
+    else:
+        print(num, "은(는) 3의 배수가 아닙니다. 다시 시도해주세요.")
+
+
+# continue문
+# 특정조건 이후 실행되는 것을 생략후 반복문의 처음으로 다시 돌아가서 반복문을 실행
+
+total = 0  
+
+# 1부터 100까지 반복
+for num in range(1, 101):
+    if num % 3 == 0:    # 현재 숫자가 3의 배수인지 확인하기
+        continue        # 3의 배수일 경우 아래 코드를 실행하지 않고 다음 숫자로 넘어감    
+    total += num        # 3의 배수가 아닌 경우에만 더함
+
+print("1~100까지의 숫자 중 3의 배수를 제외한 합:", total)
+
+# 음수를 제외한 숫자합
+total = 0  # 합을 저장할 변수 초기화
+
+# 무한 루프 시작
+while True:
+    num = int(input("숫자를 입력하세요 (음수는 더하지 않습니다): "))
+    
+    if num < 0:
+        continue    # 여기에 입력해 주세요.
+    
+    elif num == 0:
+        break    # 여기에 입력해 주세요.
+
+    else:
+    
+        total += num
+
+print(total)
+
+
